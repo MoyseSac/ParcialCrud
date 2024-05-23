@@ -114,7 +114,7 @@
     protected override async Task OnInitializedAsync()
     {  
 
-        //revistas = await localStorage.GetItemAsync<List<Revistas>>("revistas");
+        revistas = await localStorage.GetItemAsync<List<Revistas>>("revistas");
     }
 
     protected async Task Borrar(string Titulo)
