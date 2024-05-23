@@ -1,0 +1,15 @@
+﻿@page "/Edicion{titulo}"
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+<h3>Edicion</h3>
+
+@code {
+
+	[Parameter]
+	public string titulo { get; set; }
+
+	private Revistas revista = new Revistas();
+	
+}
